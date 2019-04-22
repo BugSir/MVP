@@ -15,10 +15,9 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 /**
  *@author: BUG SIR
- *@date: 2019/4/22 15:12
- *@description: 
+ *@description:
  */
-public    class RetrofitCommonModel<T extends BaseBean> extends MVPModel<T>   {
+public    class RetrofitCommonModel<T extends BaseBean> extends MVPModel<T,String>   {
     @Override
     protected void getRequest(String url, AbsCallback callback) {
 

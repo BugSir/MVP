@@ -12,7 +12,7 @@ import java.util.Map;
  *@author: BUG SIR
  *@description: 公用的MODEL，这里只是写一个okgo的调用简单例子，更多拓展自己发挥
  */
-public    class OkgoCommonModel<T extends BaseBean> extends MVPModel   {
+public    class OkgoCommonModel<T extends BaseBean> extends MVPModel<T,String>   {
 
     private Object mTag;
     public void  setTag(Object tag)
@@ -24,6 +24,7 @@ public    class OkgoCommonModel<T extends BaseBean> extends MVPModel   {
     {
         return this.mTag;
     }
+
 
     @Override
     protected void getRequest(String url, AbsCallback callback) {
